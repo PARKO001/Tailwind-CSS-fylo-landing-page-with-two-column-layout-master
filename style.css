@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input:not(:focus):not(:placeholder-shown):valid{
+    border: 2px solid green;
+}
+input:not(:focus):not(:placeholder-shown):invalid{
+    border: 2px solid red;
+}
+.error-message{
+    display: none;
+}
+input:not(:focus):not(:placeholder-shown):invalid ~ .error-message{
+    display: block;
+}
+footer ul li a:hover{
+    color: #585989;
+    border-color: #585989;
+}
